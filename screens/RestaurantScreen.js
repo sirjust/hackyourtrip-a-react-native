@@ -13,6 +13,7 @@ class RestaurantScreen extends Component {
         <AppStateContext.Consumer>
             {
                 (value) => {
+                    console.log(value)
                     return (
                         <View style={styles.container}>
                             <Text>Restaurant List Screen {value}</Text>

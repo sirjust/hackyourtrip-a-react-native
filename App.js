@@ -9,6 +9,7 @@ import { Provider } from './contexts';
 import Amplify from "aws-amplify";
 import config from "./config/config";
 import Sandbox from "./Sandbox";
+import CurrencyListScreen from './screens/CurrencyListScreen'
 
 export default class App extends React.Component {
   async componentWillMount() {
@@ -16,8 +17,9 @@ export default class App extends React.Component {
       Roboto: require('native-base/Fonts/Roboto.ttf'),
       Roboto_medium: require('native-base/Fonts/Roboto_medium.ttf'),
     });
-    this.configure();
+    // this.configure();
   }
+
 
   async configure() {
     const result = await Amplify.configure({
